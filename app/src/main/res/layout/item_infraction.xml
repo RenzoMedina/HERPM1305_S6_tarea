@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/folio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Folio"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/rut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/folio"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="RUT"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rut"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Nombre Comercial"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Direccion Comercial"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/observaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Observaciones"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/getId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_sm"
+        android:layout_marginTop="@dimen/mg_xs"
+        android:layout_marginRight="@dimen/mg_sm"
+        android:textSize="@dimen/txt_normal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Observaciones"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/mg_sm"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

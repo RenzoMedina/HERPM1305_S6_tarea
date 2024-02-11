@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/updateInfraction"
+        android:title="Actualizar"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/destroyInfraction"
+        android:title="¿Eliminar Parte?"
+        tools:ignore="MenuTitle"
+        />
+</menu>
